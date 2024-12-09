@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+}
+
+:root {
+    --primary-gray: #333333;
+    --secondary-gray: #666666;
+    --light-gray: #f5f5f5;
+    --accent-color: #007BFF;
+    --text-light: #ffffff;
+    --text-dark: #222222;
+    --light : #ffffff;
+  }
+  
+  body {
+      margin: 0;
+      background-color: var(--light-gray);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+  }  
+  header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+    .logo img {
+        height: 50px; 
+    }
+    
+    .navigation ul {
+        list-style: none; 
+        display: flex; 
+        margin: 0; 
+        padding: 0; 
+    }
+    
+    .navigation li {
+        margin-left: 20px; 
+    }
+    
+    .navigation a {
+        text-decoration: none; 
+        color: #333; 
+        font-weight: bold; 
+    }
+    
+    .navigation a:hover {
+        color: #007BFF; 
+    }
+    
+    .search-bar {
+        display: flex;
+    }
+    
+    .search-bar input {
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px 0 0 4px; 
+    }
+    
+    .search-bar button {
+        padding: 10px 15px; 
+        border: 1px solid #007BFF; 
+        background-color: #007BFF;
+        color: white; 
+        border-radius: 0 4px 4px 0;
+        cursor: pointer; 
+    }
+    
+    .search-bar button:hover {
+        background-color: #0056b3;
+    }
+  .content_first .about_sungut_lele {
+      background-color: var(--text-light);
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 30px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+  }
+  .about_content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img_first {
+    flex: 1;
+}
+
+.img_first img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.desc_sungut {
+    flex: 1;
+    padding: 1rem;
+}
+
+.btn-jmk {
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text-light);
+    background-color: var(--light-gray);
+}
+.btn-jmk:hover {
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+.btn-jmk a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+.content_first .about_sungut_lele:hover {
+      transform: translateY(-5px);
+}
+.content_kedua {
+    display: flex;
+    justify-content: center;
+    background-color: var(--text-light);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content_table {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .judul {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+.header {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.content_second {
+    background-color: var(--text-light);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.feature_list {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.feature-item {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-item i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.feature-description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-description {
+    opacity: 1;
+    visibility: visible;
+}
+.test_secs {
+    padding: 40px;
+    background-color: var(--light);
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bub-chat {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cust-test {
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.customer-name {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.bub-chat::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.footer {
+    background-color: #333;
+    color: #f2f2f2f2;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
